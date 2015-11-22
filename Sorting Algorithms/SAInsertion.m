@@ -11,15 +11,7 @@
 @implementation SAInsertion
 
 + (void)sort:(NSMutableArray *)array {
-    for (int i = 0; i<array.count; i++) {
-        for (int j = i; j>0; j--) {
-            if (array[j] < array[j-1]) {
-                [array exchangeObjectAtIndex:j-1 withObjectAtIndex:j];
-            } else {
-                break;
-            }
-        }
-    }
+    [self sort:array from:0 to:array.count-1];
 }
 
 + (void)sort:(NSMutableArray *)array from:(NSInteger)start to:(NSInteger)end {
