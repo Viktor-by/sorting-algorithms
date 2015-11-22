@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2474E6901C022F1500AD3681 /* NSMutableArray+Shuffle.m in Sources */ = {isa = PBXBuildFile; fileRef = 2474E68F1C022F1500AD3681 /* NSMutableArray+Shuffle.m */; };
+		24A5FCBE1C00699F00BE6D3D /* NSMutableArray+Random.m in Sources */ = {isa = PBXBuildFile; fileRef = 24A5FCBD1C00699F00BE6D3D /* NSMutableArray+Random.m */; };
+		24A5FCC41C006B9600BE6D3D /* SASelection.m in Sources */ = {isa = PBXBuildFile; fileRef = 24A5FCC31C006B9600BE6D3D /* SASelection.m */; };
+		24A5FCC71C0082FE00BE6D3D /* SAInsertion.m in Sources */ = {isa = PBXBuildFile; fileRef = 24A5FCC61C0082FE00BE6D3D /* SAInsertion.m */; };
+		24A5FCCA1C008DD400BE6D3D /* SAShellsort.m in Sources */ = {isa = PBXBuildFile; fileRef = 24A5FCC91C008DD400BE6D3D /* SAShellsort.m */; };
+		24A5FCCD1C010F5B00BE6D3D /* SAMergesort.m in Sources */ = {isa = PBXBuildFile; fileRef = 24A5FCCC1C010F5B00BE6D3D /* SAMergesort.m */; };
+		24A5FCD01C01377A00BE6D3D /* SAQuicksort.m in Sources */ = {isa = PBXBuildFile; fileRef = 24A5FCCF1C01377A00BE6D3D /* SAQuicksort.m */; };
 		24E8062D1C00660F0050A241 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E8062C1C00660F0050A241 /* main.m */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +30,20 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2474E68E1C022F1500AD3681 /* NSMutableArray+Shuffle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Shuffle.h"; sourceTree = "<group>"; };
+		2474E68F1C022F1500AD3681 /* NSMutableArray+Shuffle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Shuffle.m"; sourceTree = "<group>"; };
+		24A5FCBC1C00699F00BE6D3D /* NSMutableArray+Random.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Random.h"; sourceTree = "<group>"; };
+		24A5FCBD1C00699F00BE6D3D /* NSMutableArray+Random.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Random.m"; sourceTree = "<group>"; };
+		24A5FCC21C006B9600BE6D3D /* SASelection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SASelection.h; sourceTree = "<group>"; };
+		24A5FCC31C006B9600BE6D3D /* SASelection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SASelection.m; sourceTree = "<group>"; };
+		24A5FCC51C0082FE00BE6D3D /* SAInsertion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAInsertion.h; sourceTree = "<group>"; };
+		24A5FCC61C0082FE00BE6D3D /* SAInsertion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAInsertion.m; sourceTree = "<group>"; };
+		24A5FCC81C008DD400BE6D3D /* SAShellsort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAShellsort.h; sourceTree = "<group>"; };
+		24A5FCC91C008DD400BE6D3D /* SAShellsort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAShellsort.m; sourceTree = "<group>"; };
+		24A5FCCB1C010F5B00BE6D3D /* SAMergesort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMergesort.h; sourceTree = "<group>"; };
+		24A5FCCC1C010F5B00BE6D3D /* SAMergesort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMergesort.m; sourceTree = "<group>"; };
+		24A5FCCE1C01377A00BE6D3D /* SAQuicksort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAQuicksort.h; sourceTree = "<group>"; };
+		24A5FCCF1C01377A00BE6D3D /* SAQuicksort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAQuicksort.m; sourceTree = "<group>"; };
 		24E806291C00660F0050A241 /* Sorting Algorithms */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Sorting Algorithms"; sourceTree = BUILT_PRODUCTS_DIR; };
 		24E8062C1C00660F0050A241 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,6 +79,20 @@
 			isa = PBXGroup;
 			children = (
 				24E8062C1C00660F0050A241 /* main.m */,
+				24A5FCC21C006B9600BE6D3D /* SASelection.h */,
+				24A5FCC31C006B9600BE6D3D /* SASelection.m */,
+				24A5FCC51C0082FE00BE6D3D /* SAInsertion.h */,
+				24A5FCC61C0082FE00BE6D3D /* SAInsertion.m */,
+				24A5FCC81C008DD400BE6D3D /* SAShellsort.h */,
+				24A5FCC91C008DD400BE6D3D /* SAShellsort.m */,
+				24A5FCCB1C010F5B00BE6D3D /* SAMergesort.h */,
+				24A5FCCC1C010F5B00BE6D3D /* SAMergesort.m */,
+				24A5FCCE1C01377A00BE6D3D /* SAQuicksort.h */,
+				24A5FCCF1C01377A00BE6D3D /* SAQuicksort.m */,
+				24A5FCBC1C00699F00BE6D3D /* NSMutableArray+Random.h */,
+				24A5FCBD1C00699F00BE6D3D /* NSMutableArray+Random.m */,
+				2474E68E1C022F1500AD3681 /* NSMutableArray+Shuffle.h */,
+				2474E68F1C022F1500AD3681 /* NSMutableArray+Shuffle.m */,
 			);
 			path = "Sorting Algorithms";
 			sourceTree = "<group>";
@@ -118,7 +153,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24A5FCD01C01377A00BE6D3D /* SAQuicksort.m in Sources */,
+				24A5FCCD1C010F5B00BE6D3D /* SAMergesort.m in Sources */,
+				24A5FCCA1C008DD400BE6D3D /* SAShellsort.m in Sources */,
+				24A5FCC41C006B9600BE6D3D /* SASelection.m in Sources */,
+				24A5FCBE1C00699F00BE6D3D /* NSMutableArray+Random.m in Sources */,
+				2474E6901C022F1500AD3681 /* NSMutableArray+Shuffle.m in Sources */,
 				24E8062D1C00660F0050A241 /* main.m in Sources */,
+				24A5FCC71C0082FE00BE6D3D /* SAInsertion.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +279,7 @@
 				24E806321C00660F0050A241 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
