@@ -11,5 +11,6 @@
 @interface SAInsertion : NSObject
 
 + (void)sort:(NSMutableArray *)array;
++ (void)sort:(NSMutableArray *)array from:(NSInteger)start to:(NSInteger)end;
 
 @end

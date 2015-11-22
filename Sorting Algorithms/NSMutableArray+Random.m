@@ -13,7 +13,7 @@
 + (instancetype)randomArrayWithLength:(NSUInteger)length {
     NSMutableArray *array = [NSMutableArray arrayWithCapacity:length];
     while (length--) {
-        [array addObject:@(arc4random())];
+        [array addObject:@(arc4random_uniform(100))];
     }
     return array;
 }

@@ -22,4 +22,16 @@
     }
 }
 
++ (void)sort:(NSMutableArray *)array from:(NSInteger)start to:(NSInteger)end {
+    for (NSInteger i = start; i<=end; i++) {
+        for (NSInteger j = i; j>0; j--) {
+            if (array[j] < array[j-1]) {
+                [array exchangeObjectAtIndex:j-1 withObjectAtIndex:j];
+            } else {
+                break;
+            }
+        }
+    }
+}
+
 @end

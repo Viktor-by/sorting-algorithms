@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "NSMutableArray+Random.h"
+#import "NSMutableArray+Shuffle.h"
 #import "SASelection.h"
 #import "SAInsertion.h"
 #import "SAShellsort.h"
@@ -27,7 +28,20 @@ int main(int argc, const char * argv[]) {
 //            @autoreleasepool {
                 TICK;
                 [SAQuicksort sort:randomArray];
+//            [randomArray shuffle];
+//            [randomArray sortUsingComparator:^NSComparisonResult(id  _Nonnull obj1, id  _Nonnull obj2) {
+//                if (obj1 < obj2) {
+//                    return NSOrderedAscending;
+//                } else if (obj2 < obj1){
+//                    return NSOrderedDescending;
+//                } else {
+//                    return NSOrderedSame;
+//                }
+//            }];
+
                 TOCK;
+//            NSLog(@"%@", [randomArray isSorted] ? @"SORTED" : @"NOT SORTED");
+
 //            }
         }
         NSLog(@"Average: %f", -[startTime timeIntervalSinceNow]/10);

@@ -8,6 +8,7 @@
 
 #import "SAQuicksort.h"
 #import "NSMutableArray+Shuffle.h"
+#import "SAInsertion.h"
 
 @implementation SAQuicksort
 
@@ -89,6 +90,10 @@
         from:(NSInteger)start
           to:(NSInteger)end {
     if (end <= start) return;
+    if (end <= start + 250) {
+        [SAInsertion sort:array from:start to:end];
+        return;
+    }
     NSInteger p = [self partition:array from:start to:end];
     [self sort:array from:start to:p-1];
     [self sort:array from:p+1 to:end];
