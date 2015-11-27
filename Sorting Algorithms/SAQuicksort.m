@@ -13,17 +13,18 @@
 @implementation SAQuicksort
 
 + (NSInteger)pivot:(NSMutableArray *)array from:(NSInteger)start to:(NSInteger)end {
-    if (end - start > 100) {
+    if (end - start > 2500) {
         NSInteger gap = (end - start)/3;
         NSInteger median1 = [self medianOfThree:array from:start to:start+gap];
         NSInteger median2 = [self medianOfThree:array from:start+gap+1 to:start+gap+gap];
         NSInteger median3 = [self medianOfThree:array from:start+gap+gap+1 to:end];
         NSInteger ninthen = [self medianOfThree:array start:median1 mid:median2 end:median3];
         [array exchangeObjectAtIndex:start withObjectAtIndex:ninthen];
-    } else if (end - start > 30) {
-        NSInteger median = [self medianOfThree:array from:start to:end];
-        [array exchangeObjectAtIndex:start withObjectAtIndex:median];
     }
+//    else if (end - start > 30) {
+//        NSInteger median = [self medianOfThree:array from:start to:end];
+//        [array exchangeObjectAtIndex:start withObjectAtIndex:median];
+//    }
     return start;
 }
 

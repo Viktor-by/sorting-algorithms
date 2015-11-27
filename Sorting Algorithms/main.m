@@ -27,8 +27,8 @@ int main(int argc, const char * argv[]) {
         for (int i = 0; i<10; i++) {
 //            @autoreleasepool {
                 TICK;
-                [SAQuicksort sort:randomArray];
 //            [randomArray shuffle];
+                [SAQuicksort sort:randomArray];
 //            [randomArray sortUsingComparator:^NSComparisonResult(id  _Nonnull obj1, id  _Nonnull obj2) {
 //                if (obj1 < obj2) {
 //                    return NSOrderedAscending;
@@ -40,7 +40,7 @@ int main(int argc, const char * argv[]) {
 //            }];
 
                 TOCK;
-//            NSLog(@"%@", [randomArray isSorted] ? @"SORTED" : @"NOT SORTED");
+            NSLog(@"%@", [randomArray isSorted] ? @"SORTED" : @"NOT SORTED");
 
 //            }
         }
